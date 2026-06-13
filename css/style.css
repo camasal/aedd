@@ -753,6 +753,166 @@ body{
 }
 
 /* ===================================
+   RECONHECIMENTOS E PARCERIAS
+=================================== */
+
+.awards-section{
+
+    background:#ffffff;
+
+    padding:70px 0;
+}
+
+/* TÍTULO */
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+.section-title h2{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    color:#151b2d;
+
+    margin-bottom:15px;
+}
+
+.title-colors{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+}
+
+.title-colors span{
+
+    width:70px;
+
+    height:4px;
+
+    border-radius:4px;
+}
+
+.title-colors .yellow{
+    background:#f0b000;
+}
+
+.title-colors .blue{
+    background:#1f77d0;
+}
+
+.title-colors .green{
+    background:#79b73b;
+}
+
+.title-colors .pink{
+    background:#d41b6e;
+}
+
+/* TEXTO */
+
+.awards-intro{
+
+    max-width:850px;
+
+    margin:25px auto 45px;
+
+    text-align:center;
+
+    color:#555;
+
+    font-size:16px;
+
+    line-height:1.8;
+}
+
+/* GRELHA */
+
+.awards-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:24px;
+}
+
+/* CARTÕES */
+
+.award-card{
+
+    height:120px;
+
+    padding:10px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+}
+
+.award-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+/* LOGOS */
+
+.award-card img{
+
+    width:99%;
+    height:99%;
+
+    object-fit:contain;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:1024px){
+
+    .awards-grid{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+}
+
+@media(max-width:768px){
+
+    .awards-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .section-title h2{
+        font-size:28px;
+    }
+}
+
+@media(max-width:480px){
+
+    .awards-grid{
+        grid-template-columns:1fr;
+    }
+
+    .award-card{
+        height:110px;
+    }
+}
+
+/* ===================================
    FAIXA COLORIDA AEDD
 =================================== */
 
