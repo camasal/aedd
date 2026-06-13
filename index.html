@@ -1,133 +1,768 @@
+
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AEDD - Homepage</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Segoe UI,Arial,sans-serif;background:#f5f5f5;color:#222}
-header{background:#fff;padding:20px 50px;display:flex;justify-content:space-between;align-items:center}
-.logo{display:flex;align-items:center;gap:20px}
-.logo h1{font-size:72px;line-height:1}
-.logo small{font-size:20px}
-.menu a{text-decoration:none;color:#222;margin-left:25px;font-weight:600}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.hero{display:grid;grid-template-columns:40% 60%;background:#fff}
-.left{padding:60px}
-.left h2{font-size:82px;line-height:0.95;color:#1f1f1f}
-.left p{margin-top:25px;font-size:22px;color:#555}
-.btn{display:inline-block;background:#f2b300;color:white;padding:15px 25px;border-radius:8px;margin-top:25px;text-decoration:none;font-weight:bold}
+    <title>AEDD</title>
 
-.right{
-background:url('https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop') center/cover;
-min-height:550px;
-}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
 
-.section{max-width:1400px;margin:auto;padding:50px 30px}
-.title{text-align:center;font-size:40px;margin-bottom:30px}
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.card{background:white;padding:30px;border-radius:15px;border-bottom:6px solid #2196f3}
-.card:nth-child(1){border-color:#f2b300}
-.card:nth-child(2){border-color:#2196f3}
-.card:nth-child(3){border-color:#7cb342}
-.card:nth-child(4){border-color:#d81b60}
-
-.stats{display:grid;grid-template-columns:repeat(5,1fr);background:white;border-radius:15px;padding:30px;text-align:center}
-
-.cte{display:grid;grid-template-columns:30% 70%;gap:20px}
-.cteinfo{background:white;padding:30px;border-radius:15px}
-.ctecards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.ctecard{background:white;border-radius:15px;overflow:hidden}
-.ctecard img{width:100%;height:220px;object-fit:cover}
-.ctecard h3{padding:15px}
-
-footer{background:#222;color:white;padding:40px;text-align:center;margin-top:50px}
-
-@media(max-width:900px){
-.hero,.cte,.cards,.stats,.ctecards{grid-template-columns:1fr}
-.left h2{font-size:48px}
-}
-</style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
-<div class="logo">
-<div>
-<h1>AEDD</h1>
-<div style="height:6px;background:linear-gradient(90deg,#f2b300 25%,#2196f3 25%,#2196f3 50%,#7cb342 50%,#7cb342 75%,#d81b60 75%)"></div>
-</div>
-<small>Agrupamento de Escolas<br>D. Dinis Lisboa</small>
-</div>
+    <!-- TOPBAR -->
 
-<nav class="menu">
-<a href="#">Agrupamento</a>
-<a href="#">Escolas</a>
-<a href="#">Oferta Educativa</a>
-<a href="#">Projetos</a>
-<a href="#">Serviços</a>
-<a href="#">Contactos</a>
-</nav>
-</header>
+    <header class="topbar">
 
-<section class="hero">
-<div class="left">
-<h2>Aprender,<br>Inovar,<br>Crescer.</h2>
-<p>Formamos cidadãos curiosos, criativos e preparados para o futuro.</p>
-<a href="#" class="btn">Conheça o AEDD</a>
-</div>
-<div class="right"></div>
+        <div class="container topbar-content">
+
+            <div></div>
+
+            <div class="top-links">
+
+                <a href="#">
+                    <i class="bi bi-people"></i>
+                    INOVAR
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-book"></i>
+                    MOODLE
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-envelope"></i>
+                    MAIL
+                </a>
+
+                <a href="#" class="btn-contact">
+                    <i class="bi bi-telephone"></i>
+                    CONTACTOS
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- HEADER -->
+
+    <header class="main-header">
+
+        <div class="container header-content">
+
+            <div class="logo-area">
+
+                <img src="images/logo.png" alt="AEDD">
+
+            </div>
+
+            <nav class="main-menu">
+
+                <a href="#">O AGRUPAMENTO</a>
+                <a href="#">ESCOLAS</a>
+                <a href="#">OFERTA EDUCATIVA</a>
+                <a href="#">PROJETOS</a>
+                <a href="#">SERVIÇOS</a>
+                <a href="#">INFORMAÇÃO</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="container hero-container">
+
+            <!-- TEXTO -->
+
+            <div class="hero-left">
+
+                <div class="hero-decoration"></div>
+
+                <h1>
+                    Aprender,<br>
+                    Inovar,<br>
+                    Crescer<span>.</span>
+                </h1>
+
+                <p>
+                    Formamos cidadãos curiosos, criativos e responsáveis,
+                    preparados para construir o futuro.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#" class="btn-yellow">
+                        CONHEÇA O AEDD
+                    </a>
+
+                    <a href="#" class="btn-white">
+                        <i class="bi bi-newspaper"></i>
+                        NOTÍCIAS
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEM -->
+
+            <div class="hero-image">
+
+                <img src="images/hero.jpg" alt="Hero">
+
+                <!-- DESTAQUES -->
+
+                <div class="hero-highlights">
+
+                    <h3>DESTAQUES</h3>
+
+                    <a href="#">
+                        <span class="yellow"></span>
+                        Matrículas 2025/2026
+                    </a>
+
+                    <a href="#">
+                        <span class="blue"></span>
+                        Horários
+                    </a>
+
+                    <a href="#">
+                        <span class="green"></span>
+                        Refeições Escolares
+                    </a>
+
+                    <a href="#">
+                        <span class="pink"></span>
+                        Manuais Escolares
+                    </a>
+
+                    <a href="#">
+                        <span class="yellow"></span>
+                        Transportes
+                    </a>
+
+                    <a href="#">
+                        <span class="blue"></span>
+                        Contactos Úteis
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<section class="quick-access">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>ACESSOS RÁPIDOS</h2>
+
+            <div class="title-colors">
+                <span class="yellow"></span>
+                <span class="blue"></span>
+                <span class="green"></span>
+                <span class="pink"></span>
+            </div>
+        </div>
+
+        <div class="quick-grid">
+
+            <div class="quick-card yellow-border">
+
+                <div class="card-icon yellow-circle">
+                    <i class="bi bi-mortarboard"></i>
+                </div>
+
+                <h3>ALUNOS</h3>
+
+                <p>
+                    Recursos, plataformas,
+                    calendário e informações
+                    úteis para o teu dia a dia.
+                </p>
+
+                <div class="card-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+
+            </div>
+
+            <div class="quick-card blue-border">
+
+                <div class="card-icon blue-circle">
+                    <i class="bi bi-people"></i>
+                </div>
+
+                <h3>ENCARREGADOS<br>DE EDUCAÇÃO</h3>
+
+                <p>
+                    Informações, comunicados
+                    e serviços para acompanhar
+                    o percurso dos seus educandos.
+                </p>
+
+                <div class="card-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+
+            </div>
+
+            <div class="quick-card green-border">
+
+                <div class="card-icon green-circle">
+                    <i class="bi bi-easel"></i>
+                </div>
+
+                <h3>DOCENTES</h3>
+
+                <p>
+                    Recursos pedagógicos,
+                    plataformas e informações
+                    essenciais.
+                </p>
+
+                <div class="card-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+
+            </div>
+
+            <div class="quick-card pink-border">
+
+                <div class="card-icon pink-circle">
+                    <i class="bi bi-display"></i>
+                </div>
+
+                <h3>SERVIÇOS<br>DIGITAIS</h3>
+
+                <p>
+                    Inovar, Moodle, e-mail,
+                    Office 365 e outros serviços
+                    digitais do AEDD.
+                </p>
+
+                <div class="card-arrow">
+                    <i class="bi bi-arrow-right"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section class="section">
-<h2 class="title">Acessos Rápidos</h2>
-<div class="cards">
-<div class="card"><h3>Alunos</h3><p>Recursos e informações.</p></div>
-<div class="card"><h3>Encarregados de Educação</h3><p>Comunicações e serviços.</p></div>
-<div class="card"><h3>Docentes</h3><p>Recursos pedagógicos.</p></div>
-<div class="card"><h3>Serviços Digitais</h3><p>Inovar, Moodle e Office 365.</p></div>
-</div>
+<section class="numbers-section">
+
+    <div class="container">
+
+        <div class="numbers-title">
+
+            <span></span>
+            <h2>O AEDD EM NÚMEROS</h2>
+            <span></span>
+
+        </div>
+
+        <div class="numbers-grid">
+
+            <div class="number-item">
+
+                <i class="bi bi-building number-yellow"></i>
+
+                <div>
+                    <h3>8</h3>
+                    <p>ESCOLAS</p>
+                </div>
+
+            </div>
+
+            <div class="number-item">
+
+                <i class="bi bi-people number-blue"></i>
+
+                <div>
+                    <h3>+ 5 000</h3>
+                    <p>ALUNOS</p>
+                </div>
+
+            </div>
+
+            <div class="number-item">
+
+                <i class="bi bi-person-workspace number-green"></i>
+
+                <div>
+                    <h3>+ 600</h3>
+                    <p>DOCENTES E NÃO DOCENTES</p>
+                </div>
+
+            </div>
+
+            <div class="number-item">
+
+                <i class="bi bi-cpu number-pink"></i>
+
+                <div>
+                    <h3>2</h3>
+                    <p>CENTROS TECNOLÓGICOS ESPECIALIZADOS</p>
+                </div>
+
+            </div>
+
+            <div class="number-item">
+
+                <i class="bi bi-globe-europe-africa number-blue"></i>
+
+                <div>
+                    <h3>+ 30</h3>
+                    <p>PROJETOS EUROPEUS E PARCERIAS</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section class="section">
-<h2 class="title">O AEDD em Números</h2>
-<div class="stats">
-<div><h2>8</h2><p>Escolas</p></div>
-<div><h2>5000+</h2><p>Alunos</p></div>
-<div><h2>600+</h2><p>Docentes</p></div>
-<div><h2>2</h2><p>CTE</p></div>
-<div><h2>30+</h2><p>Projetos</p></div>
-</div>
+<section class="cte-section">
+
+    <div class="container cte-grid">
+
+        <div class="cte-info">
+
+            <span class="cte-label">
+                INOVAÇÃO E TECNOLOGIA
+            </span>
+
+            <h2>
+                CTE: O futuro<br>
+                acontece aqui.
+            </h2>
+
+            <div class="cte-line"></div>
+
+            <p>
+                Os nossos Centros Tecnológicos Especializados
+                preparam os alunos para os desafios do mundo real
+                com tecnologia, criatividade e trabalho em equipa.
+            </p>
+
+            <a href="#" class="cte-button">
+                SABER MAIS
+                <i class="bi bi-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="cte-card blue-border">
+
+            <img src="images/cte1.jpg" alt="CTE Informática">
+
+            <div class="cte-card-content">
+
+                <h3>CTE INFORMÁTICA</h3>
+
+                <p>
+                    Programação, redes e sistemas,
+                    inteligência artificial e cibersegurança.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="cte-card green-border">
+
+            <img src="images/cte2.jpg" alt="CTE Digital">
+
+            <div class="cte-card-content">
+
+                <h3>CTE DIGITAL</h3>
+
+                <p>
+                    Multimédia, design, realidade virtual
+                    e produção digital.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="cte-card pink-border">
+
+            <img src="images/cte3.jpg" alt="Laboratórios">
+
+            <div class="cte-card-content">
+
+                <h3>LABORATÓRIOS MODERNOS</h3>
+
+                <p>
+                    Equipamentos de última geração
+                    para aprender fazendo.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<section class="section cte">
-<div class="cteinfo">
-<h2>CTE: O futuro acontece aqui.</h2>
-<p style="margin-top:20px">Centros Tecnológicos Especializados focados em inovação, programação, multimédia e IA.</p>
-</div>
+<section class="news-events">
 
-<div class="ctecards">
-<div class="ctecard">
-<img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop">
-<h3>CTE Informática</h3>
-</div>
-<div class="ctecard">
-<img src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?q=80&w=1200&auto=format&fit=crop">
-<h3>CTE Digital</h3>
-</div>
-<div class="ctecard">
-<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1200&auto=format&fit=crop">
-<h3>Laboratórios Modernos</h3>
-</div>
-</div>
+    <div class="container news-grid">
+
+        <!-- NOTÍCIAS -->
+
+        <div class="news-column">
+
+            <div class="section-header">
+
+                <div class="title-left">
+                    <h2>NOTÍCIAS</h2>
+                    <span class="yellow-line"></span>
+                </div>
+
+                <a href="#" class="view-all">
+                    VER TODAS
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="news-cards">
+
+                <article class="news-card">
+
+                    <img src="images/noticia1.jpg">
+
+                    <div class="news-content">
+
+                        <span class="news-category pink">
+                            PROJETOS
+                        </span>
+
+                        <h3>
+                            AEDD distinguido com
+                            Selo Escola Digital 2024
+                        </h3>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <img src="images/noticia2.jpg">
+
+                    <div class="news-content">
+
+                        <span class="news-category blue">
+                            ATIVIDADES
+                        </span>
+
+                        <h3>
+                            Alunos do AEDD vencem
+                            desafio nacional de robótica
+                        </h3>
+
+                    </div>
+
+                </article>
+
+                <article class="news-card">
+
+                    <img src="images/noticia3.jpg">
+
+                    <div class="news-content">
+
+                        <span class="news-category green">
+                            VISITAS
+                        </span>
+
+                        <h3>
+                            Visita de estudo
+                            ao Parque das Nações
+                        </h3>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <!-- EVENTOS -->
+
+        <div class="events-column">
+
+            <div class="section-header">
+
+                <div class="title-left">
+                    <h2>PRÓXIMOS EVENTOS</h2>
+                </div>
+
+                <a href="#" class="calendar-link">
+                    VER CALENDÁRIO
+                </a>
+
+            </div>
+
+            <div class="event-item">
+
+                <div class="event-date">
+                    <strong>22</strong>
+                    <span>MAI</span>
+                </div>
+
+                <div class="event-info">
+                    <h4>Feira das Ciências e da Tecnologia</h4>
+                    <p>Escola Secundária D. Dinis</p>
+                </div>
+
+                <div class="event-time">
+                    09:30
+                </div>
+
+            </div>
+
+            <div class="event-item">
+
+                <div class="event-date">
+                    <strong>28</strong>
+                    <span>MAI</span>
+                </div>
+
+                <div class="event-info">
+                    <h4>Reunião de Encarregados de Educação</h4>
+                    <p>2.º e 3.º Ciclos</p>
+                </div>
+
+                <div class="event-time">
+                    18:30
+                </div>
+
+            </div>
+
+            <div class="event-item">
+
+                <div class="event-date">
+                    <strong>05</strong>
+                    <span>JUN</span>
+                </div>
+
+                <div class="event-info">
+                    <h4>Final do Concurso de Leitura</h4>
+                    <p>Biblioteca Escolar</p>
+                </div>
+
+                <div class="event-time">
+                    14:00
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<footer>
-AEDD • Agrupamento de Escolas D. Dinis
+<section class="impact-section">
+
+    <div class="container">
+
+        <div class="impact-bar">
+
+            <div class="impact-item yellow-bg">
+                <i class="bi bi-heart"></i>
+                <span>
+                    Comunidade<br>
+                    que inspira
+                </span>
+            </div>
+
+            <div class="impact-item blue-bg">
+                <i class="bi bi-lightbulb"></i>
+                <span>
+                    Conhecimento<br>
+                    que transforma
+                </span>
+            </div>
+
+            <div class="impact-item green-bg">
+                <i class="bi bi-rocket"></i>
+                <span>
+                    Futuro<br>
+                    que construímos
+                </span>
+            </div>
+
+            <div class="impact-cta">
+
+                <div>
+                    <h3>Juntos construímos o futuro.</h3>
+                    <p>Participe na vida do AEDD!</p>
+                </div>
+
+                <a href="#">
+                    FALE CONNOSCO
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="main-footer">
+
+    <div class="container footer-grid">
+
+        <!-- LOGO -->
+
+        <div class="footer-logo">
+
+            <img src="images/logo.png" alt="AEDD">
+
+        </div>
+
+        <!-- ESCOLAS -->
+
+        <div class="footer-schools">
+
+            <h4>ESCOLAS DO AGRUPAMENTO</h4>
+
+            <div class="schools-columns">
+
+                <ul>
+                    <li>Escola Secundária D. Dinis (Sede)</li>
+                    <li>Escola Básica Damião de Góis</li>
+                    <li>Escola Básica de Marvila</li>
+                    <li>Escola Escola Básica Professor Agostinho da Silva</li>
+                </ul>
+
+                <ul>
+                    <li>Escola Básica dos Lóios</li>
+                    <li>Escola Básica João dos Santos</li>
+                    <li>Escola Básica Luíza Neto Jorge</li>
+                    <li>Escola Básica 195 (Aquilino Ribeiro)</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- CONTACTOS -->
+
+        <div class="footer-contact">
+
+            <h4>CONTACTOS</h4>
+
+            <p>
+                <i class="bi bi-geo-alt"></i>
+                Rua Manuel Teixeira Gomes<br>
+                1950-186 Lisboa
+            </p>
+
+            <p>
+                <i class="bi bi-telephone"></i>
+                (+351) 218310190
+            </p>
+
+            <p>
+                <i class="bi bi-envelope"></i>
+                info@esecddinis.pt
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+
+            </div>
+
+        </div>
+
+        <!-- MAPA -->
+
+        <div class="footer-map">
+
+<div class="footer-map">
+
+    <h4>LOCALIZAÇÃO</h4>
+
+    <iframe
+        src="https://www.google.com/maps?q=Rua+Manuel+Teixeira+Gomes,+Lisboa&output=embed"
+        width="100%"
+        height="120"
+        style="border:0;border-radius:8px;"
+        loading="lazy">
+    </iframe>
+
+    <a href="https://maps.google.com/?q=Rua+Manuel+Teixeira+Gomes,+Lisboa"
+       target="_blank"
+       class="map-link">
+
+    </a>
+
+</div>
+
+    </div>
+
 </footer>
 
+<div class="copyright">
+
+    <div class="container copyright-content">
+
+        <span>
+            © 2026 Agrupamento de Escolas D. Dinis, Lisboa.
+            Todos os direitos reservados.
+        </span>
+
+        <div class="copyright-links">
+
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Mapa do Site</a>
+            <a href="#">Acessibilidade</a>
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
+
 </html>
