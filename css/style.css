@@ -45,7 +45,6 @@ body{
     display:flex;
     align-items:center;
     gap:8px;
-
     text-decoration:none;
     color:#222;
     font-size:13px;
@@ -143,18 +142,14 @@ body{
 
 .hero-left p{
     margin-top:30px;
-
     font-size:22px;
     line-height:1.6;
-
     color:#444;
-
     max-width:360px;
 }
 
 .hero-buttons{
     margin-top:35px;
-
     display:flex;
     gap:18px;
 }
@@ -162,26 +157,18 @@ body{
 .btn-yellow{
     background:#f0b000;
     color:white;
-
     padding:16px 24px;
-
     border-radius:10px;
-
     text-decoration:none;
     font-weight:700;
 }
 
 .btn-white{
     background:white;
-
     border:1px solid #dcdcdc;
-
     color:#222;
-
     padding:16px 20px;
-
     border-radius:10px;
-
     text-decoration:none;
     font-weight:700;
 }
@@ -196,9 +183,7 @@ body{
 .hero-image img{
     width:100%;
     height:100%;
-
     object-fit:cover;
-
     display:block;
 }
 
@@ -207,26 +192,16 @@ body{
 ========================= */
 
 .hero-highlights{
-
     position:absolute;
-
     top:60px;
     right:40px;
-
     width:310px;
-
     padding:35px 28px;
-
     color:white;
-
     border-radius:24px;
-
-    background:rgba(9,55,120,.82);
-
-    backdrop-filter:blur(12px);
-
+    background:rgba(9,55,120,.5);
+    backdrop-filter:blur(5px);
     box-shadow:0 20px 40px rgba(0,0,0,.25);
-
     z-index:10;
 }
 
@@ -239,21 +214,16 @@ body{
     display:flex;
     align-items:center;
     gap:15px;
-
     padding:15px 0;
-
     color:white;
     text-decoration:none;
-
     border-bottom:1px solid rgba(255,255,255,.15);
 }
 
 .hero-highlights span{
     width:28px;
     height:4px;
-
     border-radius:5px;
-
     display:block;
 }
 
@@ -289,7 +259,6 @@ body{
         position:relative;
         top:auto;
         right:auto;
-
         margin:20px;
     }
 
@@ -343,17 +312,11 @@ body{
 
 .quick-card{
     position:relative;
-
     background:white;
-
     padding:35px 28px;
-
     min-height:280px;
-
     border-radius:18px;
-
     box-shadow:0 8px 25px rgba(0,0,0,.06);
-
     transition:.3s;
 }
 
@@ -380,17 +343,12 @@ body{
 .card-icon{
     width:75px;
     height:75px;
-
     border-radius:50%;
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     color:white;
-
     font-size:36px;
-
     margin-bottom:25px;
 }
 
@@ -470,9 +428,7 @@ body{
     align-items:center;
     justify-content:center;
     gap:20px;
-
     padding:20px;
-
     border-right:1px solid #e5e5e5;
 }
 
@@ -564,26 +520,18 @@ body{
     display:inline-flex;
     align-items:center;
     gap:10px;
-
     background:#79b73b;
     color:white;
-
     text-decoration:none;
-
     padding:14px 22px;
-
     border-radius:10px;
-
     font-weight:700;
 }
 
 .cte-card{
     background:white;
-
     border-radius:16px;
-
     overflow:hidden;
-
     box-shadow:0 6px 20px rgba(0,0,0,.06);
 }
 
@@ -717,9 +665,7 @@ body{
     display:grid;
     grid-template-columns:70px 1fr 60px;
     gap:15px;
-
     padding:18px 0;
-
     border-bottom:1px solid #e8e8e8;
 }
 
@@ -757,47 +703,33 @@ body{
 =================================== */
 
 .awards-section{
-
     background:#ffffff;
-
     padding:70px 0;
 }
 
 /* TÍTULO */
 
 .section-title{
-
     text-align:center;
-
     margin-bottom:20px;
 }
 
 .section-title h2{
-
     font-size:40px;
-
     font-weight:800;
-
     color:#151b2d;
-
     margin-bottom:15px;
 }
 
 .title-colors{
-
     display:flex;
-
     justify-content:center;
-
     gap:12px;
 }
 
 .title-colors span{
-
     width:70px;
-
     height:4px;
-
     border-radius:4px;
 }
 
@@ -820,67 +752,48 @@ body{
 /* TEXTO */
 
 .awards-intro{
-
     max-width:850px;
-
     margin:25px auto 45px;
-
     text-align:center;
-
     color:#555;
-
     font-size:16px;
-
     line-height:1.8;
 }
 
 /* GRELHA */
 
 .awards-grid{
-
     display:grid;
-
     grid-template-columns:repeat(5,1fr);
-
     gap:24px;
 }
 
 /* CARTÕES */
 
 .award-card{
-
     height:120px;
-
     padding:10px;
-
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 }
 
 .award-card:hover{
-
     transform:translateY(-5px);
-
     box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 /* LOGOS */
 
 .award-card img{
-
     width:99%;
     height:99%;
-
     object-fit:contain;
 }
 
 /* RESPONSIVO */
 
 @media(max-width:1024px){
-
     .awards-grid{
         grid-template-columns:repeat(3,1fr);
     }
@@ -928,32 +841,24 @@ body{
 }
 
 .impact-bar{
-
     display:grid;
-
     grid-template-columns:
         17%
         17%
         17%
         49%;
-
     overflow:hidden;
-
     min-height:90px;
 }
 
 /* BLOCOS ESQUERDA */
 
 .impact-item{
-
     display:flex;
     align-items:center;
     justify-content:center;
-
     gap:18px;
-
     color:white;
-
     padding:15px 20px;
 }
 
