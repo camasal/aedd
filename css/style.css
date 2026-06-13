@@ -1124,3 +1124,272 @@ body{
 
     font-size:12px;
 }
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media (max-width: 1024px){
+
+    .container{
+        width:95%;
+    }
+
+    .main-menu{
+        gap:20px;
+    }
+
+    .main-menu a{
+        font-size:13px;
+    }
+
+    /* HERO */
+
+    .hero-container{
+        grid-template-columns:1fr;
+    }
+
+    .hero-left{
+        text-align:center;
+        align-items:center;
+        padding:40px 20px;
+    }
+
+    .hero-left h1{
+        font-size:60px;
+    }
+
+    .hero-left p{
+        max-width:600px;
+    }
+
+    .hero-image{
+        min-height:450px;
+    }
+
+    .hero-highlights{
+        width:280px;
+        right:20px;
+        top:20px;
+    }
+
+    /* ACESSOS */
+
+    .quick-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* NÚMEROS */
+
+    .numbers-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .number-item{
+        border-right:none;
+        border-bottom:1px solid #e5e5e5;
+        padding-bottom:20px;
+    }
+
+    /* CTE */
+
+    .cte-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .cte-info{
+        grid-column:1 / -1;
+        margin-bottom:20px;
+    }
+
+    /* NOTÍCIAS */
+
+    .news-grid{
+        grid-template-columns:1fr;
+    }
+
+    .news-cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /* FAIXA */
+
+    .impact-bar{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .impact-cta{
+        grid-column:1 / -1;
+    }
+
+    /* FOOTER */
+
+    .footer-grid{
+        grid-template-columns:1fr 1fr;
+    }
+}
+
+/* ===================================
+   TELEMÓVEL
+=================================== */
+
+@media (max-width: 768px){
+
+    .container{
+        width:94%;
+    }
+
+    /* TOPBAR */
+
+    .topbar-content{
+        justify-content:center;
+    }
+
+    .top-links{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .top-links a{
+        font-size:12px;
+    }
+
+    /* HEADER */
+
+    .header-content{
+        flex-direction:column;
+        height:auto;
+        padding:20px 0;
+        gap:20px;
+    }
+
+    .logo-area img{
+        height:80px;
+    }
+
+    .main-menu{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .main-menu a{
+        font-size:12px;
+    }
+
+    /* HERO */
+
+    .hero-left h1{
+        font-size:46px;
+    }
+
+    .hero-left p{
+        font-size:16px;
+    }
+
+    .hero-image{
+        min-height:350px;
+    }
+
+    .hero-highlights{
+        position:relative;
+        width:100%;
+        top:auto;
+        right:auto;
+        margin:20px;
+    }
+
+    /* ACESSOS */
+
+    .quick-grid{
+        grid-template-columns:1fr;
+    }
+
+    /* NÚMEROS */
+
+    .numbers-title h2{
+        font-size:24px;
+    }
+
+    .numbers-grid{
+        grid-template-columns:1fr;
+    }
+
+    .number-item{
+        justify-content:flex-start;
+    }
+
+    /* CTE */
+
+    .cte-grid{
+        grid-template-columns:1fr;
+    }
+
+    .cte-info h2{
+        font-size:38px;
+    }
+
+    /* NOTÍCIAS */
+
+    .news-cards{
+        grid-template-columns:1fr;
+    }
+
+    /* FAIXA */
+
+    .impact-bar{
+        grid-template-columns:1fr;
+    }
+
+    .impact-item{
+        justify-content:flex-start;
+    }
+
+    .impact-cta{
+        flex-direction:column;
+        text-align:center;
+        gap:20px;
+        padding:30px 20px;
+    }
+
+    .impact-cta a{
+        margin-right:0;
+    }
+
+    .impact-cta::after{
+        display:none;
+    }
+
+    /* FOOTER */
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-grid > div{
+        border-right:none;
+        border-bottom:1px solid #eeeeee;
+        padding-bottom:25px;
+    }
+
+    .footer-grid > div:last-child{
+        border-bottom:none;
+    }
+
+    .schools-columns{
+        grid-template-columns:1fr;
+    }
+
+    .copyright-content{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .copyright-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
